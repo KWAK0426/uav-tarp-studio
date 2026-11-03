@@ -1,0 +1,30 @@
+name: elc-studio
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - numpy=1.26
+  - scipy=1.13
+  - gdal=3.11
+  - opencv=4.10
+  - pillow
+  - pandas
+  - matplotlib
+  - pyproj
+  - shapely>=2
+  - tifffile
+  - pysolar
+  - scikit-image
+  - imageio
+  - psutil
+  - packaging
+  - pytz
+  - tzdata
+  - requests
+  - tk
+  - pywin32
+  - exiftool>=13.07
+  - pip
+  - pip:
+      - PyExifTool==0.5.6

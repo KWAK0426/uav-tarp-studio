@@ -1,0 +1,549 @@
+{
+  "edition": "General ELC only",
+  "release": "2026-10-26",
+  "base_zip_sha256": "67b82191391318ebe0f9ff76067bb306d5af8e116784ea7b39f725fe023ae68a",
+  "excluded": [
+    "imagery",
+    "credentials",
+    "historical settings and approvals",
+    "runtime",
+    "test outputs"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 164,
+      "sha256": "f56e202d52b9d4f26e6e25079d88058ef5f3c1fb52a438ec06934881704e4172"
+    },
+    {
+      "path": "00_INSTALL.bat",
+      "bytes": 202,
+      "sha256": "9cbcb38714bdc38707e055bbcad49a87b536968d5d2d107540b180e6518bf6f2"
+    },
+    {
+      "path": "01_START.bat",
+      "bytes": 223,
+      "sha256": "340ba9a46816aeb452ab42e95d2a4da556d12336d164eeceb4beacd3ebd88e26"
+    },
+    {
+      "path": "02_CHECK.bat",
+      "bytes": 202,
+      "sha256": "fc193930a9cfcd98631d74d82ba62c72b5fd16e68884430affbbdc2b240b093c"
+    },
+    {
+      "path": "03_NEW_PROJECT.bat",
+      "bytes": 223,
+      "sha256": "b7f649bd13d39690ed61d5cf3ea5d1724a84078a28c1f90e2eae4a1717625c0b"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 6834,
+      "sha256": "3dd5cf0c5ed3533bdb5e8ea5dcc862a4cd5ebf65131026cfc69f6cd7ea3c6be1"
+    },
+    {
+      "path": "distribution.py",
+      "bytes": 21248,
+      "sha256": "3ee9549756995f89fbcb3e9d6c761866be5b90e11b9df1a63c2204edd475c1be"
+    },
+    {
+      "path": "DISTRIBUTION_CHANGES.md",
+      "bytes": 3777,
+      "sha256": "41679c8c3759dd250ebec1de0ae90bba4cee5a11a0386d71ba6607e6d253d8dd"
+    },
+    {
+      "path": "docs/CODEX_HANDOFF.md",
+      "bytes": 6583,
+      "sha256": "f90e4c02696f89cd3f85a349f2832913b72ccc46d6e65c78b0580f05fd020e3e"
+    },
+    {
+      "path": "docs/FIRST_START.md",
+      "bytes": 6240,
+      "sha256": "aae78401e96291cfcc714503866658881e548925094cdfe52155ac7fff098de5"
+    },
+    {
+      "path": "docs/KNOWN_LIMITS.md",
+      "bytes": 4646,
+      "sha256": "1ebc3af6b8b984754e8230c10e696645499f3b979c02f035d0d207f2fe0bcd41"
+    },
+    {
+      "path": "docs/REQUIRED_INPUTS.md",
+      "bytes": 4521,
+      "sha256": "2829092c9e72ba696a890ef02c19859056764aad9a36e1bb2f75104c7bb5f98e"
+    },
+    {
+      "path": "docs/USER_GUIDE.md",
+      "bytes": 9366,
+      "sha256": "0885b7a5c141bea38b94f2bda1895d8a3df02e0075d1308c812d1bcc3c9a1a2d"
+    },
+    {
+      "path": "ed_sensor_correction_tools/apply_ed_sensor_correction.py",
+      "bytes": 22443,
+      "sha256": "76383b878d5035515f795cce4ef701e5599046d0af88e306c6bb818a9b200fc5"
+    },
+    {
+      "path": "ed_sensor_correction_tools/apply_elc_reflectance_with_config.py",
+      "bytes": 12048,
+      "sha256": "fa912b8c470d8b308a65f9a725fe779e9d50bc5157b287301d1f5100a0a7e362"
+    },
+    {
+      "path": "environment.yml",
+      "bytes": 405,
+      "sha256": "d46e0b230fa0495b8b72338dc7f1e4c217912d87f20b02ffe9b3a86309a87be9"
+    },
+    {
+      "path": "launcher.ps1",
+      "bytes": 3361,
+      "sha256": "27e7de98b7868cc5c9e07a046e5bddf0ac7206dc27204daa98250d71083b5505"
+    },
+    {
+      "path": "outputs/nongwon_preprocess_gui/generic_elc_tools/generic_elc_gui.py",
+      "bytes": 113196,
+      "sha256": "b059d812160e28193c87b0c7b803c05b4238d47cf6008437d07d54d417e7a64e"
+    },
+    {
+      "path": "outputs/nongwon_preprocess_gui/metashape_metadata.py",
+      "bytes": 2045,
+      "sha256": "66ed175234e8187306f8d4405d28a495fb72c1fcfb62e604b161b0557138c8f3"
+    },
+    {
+      "path": "outputs/nongwon_preprocess_gui/nongwon_preprocess_gui.py",
+      "bytes": 115509,
+      "sha256": "fb54e54c0f803e055b999ecde0972118d410065c4cf33820876165915400cd18"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5852,
+      "sha256": "06a9fefff686aa53a97cece4d91be9a53a5cb8060a39df542ce622354e8b3d4c"
+    },
+    {
+      "path": "run_tests.py",
+      "bytes": 874,
+      "sha256": "fbb576ce5ff6342dd5dba1d800a8698733c905be8012ae7d3920853a13bfea99"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 17101,
+      "sha256": "691311433e7079798faafed6fbe5aa57aefefd5115c0abeb7ef975fad0eba6a4"
+    },
+    {
+      "path": "tarp_center_roi_tool/app.py",
+      "bytes": 29584,
+      "sha256": "7d8a040bf464bc15721a8440703abf052c5b2ad74e6ac5521fda764eabda1b37"
+    },
+    {
+      "path": "tarp_center_roi_tool/core.py",
+      "bytes": 15204,
+      "sha256": "0254fd63c1611e2ad91ad7587a4a23c7514fe3b6153bba071e0250d415fa812f"
+    },
+    {
+      "path": "tarp_center_roi_tool/demo.py",
+      "bytes": 7937,
+      "sha256": "7e08ce9bf899eafa92a540a0d8a74ec77319cee0f7c6684d33de442ce77914ae"
+    },
+    {
+      "path": "tarp_center_roi_tool/project_ui.py",
+      "bytes": 8429,
+      "sha256": "0a3ad5a0983664c96a7fc9cf7016f988390b11c931a1e152b2c36cac39c59b58"
+    },
+    {
+      "path": "tarp_center_roi_tool/studio_ui.py",
+      "bytes": 19850,
+      "sha256": "16c82e939d7e2f4d8259af7b9c06acff5ebda5dda570ae400020e29026e17848"
+    },
+    {
+      "path": "tarp_center_roi_tool/test_automation.py",
+      "bytes": 8820,
+      "sha256": "7e71699a5dff3888502522bd1fc3360158ee910000eedbba00e63dfcbee9946a"
+    },
+    {
+      "path": "tarp_center_roi_tool/test_core.py",
+      "bytes": 3909,
+      "sha256": "7598969fafca9f376c444c193510e9fae351ab668179b43088786fba50c762c8"
+    },
+    {
+      "path": "tarp_center_roi_tool/test_project.py",
+      "bytes": 14609,
+      "sha256": "51a2aa14ca0d779f34e89762087ef3518be1921d502d82476ba7c757cd4ccf48"
+    },
+    {
+      "path": "templates/Ed.csv",
+      "bytes": 192,
+      "sha256": "cf3e34ecd41ab0ad2615773361f1dfdf68f81c0b441eaaae4bcdbb1c752a0297"
+    },
+    {
+      "path": "templates/sensor_gain.csv",
+      "bytes": 41,
+      "sha256": "169e6d7760aa82d3e7d66d7cbe5644bd8cc243b1f05466f5471e5e99a15cefdb"
+    },
+    {
+      "path": "templates/tarp_reflectance.csv",
+      "bytes": 75,
+      "sha256": "d8ed32c04e46a6b7d90b3261f0012461ac26cc5c0f7ed03785b9cc5ad869253c"
+    },
+    {
+      "path": "test_distribution.py",
+      "bytes": 3234,
+      "sha256": "38e7871cb9e84a10a8a5e6ad1e0b90a7d2b3202e2230659e2a5d30f98bd496ad"
+    },
+    {
+      "path": "test_general_backend.py",
+      "bytes": 19802,
+      "sha256": "1602155365814b569226c0372410b8480705a70747a7d8f87290436487612315"
+    },
+    {
+      "path": "test_general_e2e.py",
+      "bytes": 7448,
+      "sha256": "9d17a545d806f1381d8bb73476e42ed8077ae914c91b91a26aca0c0dc29c3cee"
+    },
+    {
+      "path": "test_general_provenance.py",
+      "bytes": 14567,
+      "sha256": "24c11e6d8dc203061681e6a9e4134b0418321108c123dc695bbd1232dc48ce28"
+    },
+    {
+      "path": "test_startup_ui.py",
+      "bytes": 6525,
+      "sha256": "04d0c322493cecf8e5125629f3930dc639900696218ec0c056134143276da82b"
+    },
+    {
+      "path": "test_ui_feedback.py",
+      "bytes": 3600,
+      "sha256": "b9eed0f172f3b8ca7c488283a10da09dd4550eb16ea47ffafee012c643a9bd10"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1433,
+      "sha256": "d2937ee0ea00a292ab4aedce976833beb622e99265139f1863afff5178dec557"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/01_START_STUDIO.bat",
+      "bytes": 65,
+      "sha256": "36c82f48682b188505d63a132648e55a5ff9050f7707cfdb7e5b625d33c26b50"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/general_studio.py",
+      "bytes": 55496,
+      "sha256": "911cb099b4585c3a5b9c01debbe3a48418aacafff5bdb11533a66e1c4d7a9aaa"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/test_general_gui.py",
+      "bytes": 15447,
+      "sha256": "ad2acb7ffcf5f07af1c15eb93c9a3ae96c6370d60fda9e9fc44ca7165dd5497c"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/docs/EASY_ELC.md",
+      "bytes": 6050,
+      "sha256": "70d0e5929dbc21019ff68bb34544f12624713d5b2ad3b91a79038b177962d7df"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/docs/INTEGRATED_RADIOMETRY_ED.md",
+      "bytes": 8554,
+      "sha256": "afbb541fb64215644df9ea96b1f5b3543653fde9242a7a5f7b24f91905adaf98"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/docs/START_HERE.html",
+      "bytes": 3626,
+      "sha256": "bd19c493161c4c225faa1e4207404fbd2da0c2a99086678e706433db52c2bef1"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/defaults/mx_dual_sensor_intercalibration_gain.csv",
+      "bytes": 10,
+      "sha256": "3d8bb1da26420ee1a9b4c8d4d35dbecd32499598d36c9cdca0479a68f0e5442f"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/defaults/tarp_reflectance_library.csv",
+      "bytes": 75,
+      "sha256": "d8ed32c04e46a6b7d90b3261f0012461ac26cc5c0f7ed03785b9cc5ad869253c"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/docs/ai_assistant_skill.md",
+      "bytes": 648,
+      "sha256": "968a0fd437ff8776957222b0807fea4451daad836a450ccb97364e1575811d49"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/legacy_studio.py",
+      "bytes": 98236,
+      "sha256": "cc790c932ede939042f51bb0f5f7c28213fcc05954d2e55f74ba7a6600f2220f"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/run_gui.bat",
+      "bytes": 68,
+      "sha256": "254076ea89fed3f78d9a41fe92f50001387f27294a282826bc9e65963c36a182"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/__init__.py",
+      "bytes": 87,
+      "sha256": "76cf6ee4ed99e32d374d5c34f9325ffec5a14ca998268da36aa7f34f1753268d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/assistant.py",
+      "bytes": 15310,
+      "sha256": "9ed12e0ce52dd2cad951b4d19999eae30c74ca965cfddbb59fd79edf32bcc803"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/assistant_session.py",
+      "bytes": 2259,
+      "sha256": "66b2612e0fcdf82ba76aaa87ad6c44b0ec2ee0812835418f945217f9f21c4f44"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/assistant_ui.py",
+      "bytes": 37019,
+      "sha256": "cc6449c6a27dbe5a2257c02827482a427427dc113752828ddfd0f8ed4d810607"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/codex_assistant.py",
+      "bytes": 14669,
+      "sha256": "6492b6f73ea98a2b464aa50512d5692ef6f26584a5a3d36a67d377e1a7c7e726"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/config.py",
+      "bytes": 3699,
+      "sha256": "1705f3ae53a656d3429de23823d702c4f89e9fdf7c282c12a0e29b84a96b91de"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/dataset.py",
+      "bytes": 7970,
+      "sha256": "5d9a237e3834fa1fed0a760f028b8d8162be98f8c8df08a8ef964459b4a71f62"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/dataset_ui.py",
+      "bytes": 7115,
+      "sha256": "60cd718a2f141d70d4c59f20eabdcd0cd6311c09ebbc7b8d6918569cf18cc521"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/easy_elc.py",
+      "bytes": 15453,
+      "sha256": "c8f0ed25ab1266210a477f90e05db992d87e48d81bd601cacc03876d60e804d0"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/elc_fit.py",
+      "bytes": 19663,
+      "sha256": "68fdf518e907cf7ff6ac064ef1e88c9df2736d13bde1b277791e518ddc58f3f4"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/elc_prepost.py",
+      "bytes": 15969,
+      "sha256": "c59e781938ae2aa260287a845a812cc858863339b8b0b53d5376db76fc1db419"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/elc_priority.py",
+      "bytes": 25286,
+      "sha256": "0c13ef36f04e2766737936bc7fd3577edcfe69ed908caa1f10f9a990e2c19e6e"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/exif_support.py",
+      "bytes": 976,
+      "sha256": "a12c09ced51abe3887fae627875aecfbc6e149e9c7a16e53772e705a0ff8e623"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/general_project.py",
+      "bytes": 7182,
+      "sha256": "4a586ecd7c74d79d3451d7e7d502c377bca570bc4123c088b9f585a47eb272b6"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/integrated.py",
+      "bytes": 24913,
+      "sha256": "4639fdc4b30b5d0f7570cf29d4da4c3b3a99bf5405deb732f4c12e38d540be4d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/preparation.py",
+      "bytes": 21245,
+      "sha256": "19c0f5b9b10033200a512eca36114781f20d30393cc07cfbbafd16f232484564"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/preparation_runner.py",
+      "bytes": 7758,
+      "sha256": "e1ad017353fa073a153b09565cc605bd5d326fa98ab9db7ddfe7265bf1d386fb"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/preprocess.py",
+      "bytes": 5117,
+      "sha256": "f552df5f16fe2f4eab05f8107fa7c77b9b5256d25b2fd18ed672c3e70346d52d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/ramses_ed.py",
+      "bytes": 5942,
+      "sha256": "4133e12de330bae5153139c644885195c18047fe1b88d86676963090c85ad707"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/roi_studio_bridge.py",
+      "bytes": 26143,
+      "sha256": "5a151e52cc00bd60297024812b182991581605fdef0d7aa6af71605831b6ac9a"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/runner.py",
+      "bytes": 1639,
+      "sha256": "e6d10253a7d7c89faa9507fdb71da941edfa640459cdb048e78961124ebca7f5"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/solar.py",
+      "bytes": 2154,
+      "sha256": "b970e872974967c113d317eb035105ad14e84517faf9de99e5bf08e230fd889d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_handoff.py",
+      "bytes": 4708,
+      "sha256": "71f08b878529136f96de0e9e1fb5f3373787c628fde78e317e75b09a13fe1051"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_popup.py",
+      "bytes": 75013,
+      "sha256": "e7165f397c88914223deb7615f8867c76bf65b37c0f83334e8d2fc022b9f8739"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/aligned_rgb.py",
+      "bytes": 4955,
+      "sha256": "44601bd6c1762a6f4a09b8c81690b3ea692e3026bd8b7eccc173dda1c1ac259c"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/context.py",
+      "bytes": 674,
+      "sha256": "aec82bf0c6c051ade518f60198a94f0e74c2eb8035c3ecd41e4c51d08cda4fac"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/pair_candidates.py",
+      "bytes": 3555,
+      "sha256": "4cdb3f4329488660d4768cf2ec274836dedc013d41830044011318b29551b0fc"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/pixel_exclusions.py",
+      "bytes": 7427,
+      "sha256": "fada3ddd3be3927a6ea82c0aab2d5a114a6d70e550243b6818929a55fef9fd5d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/review.py",
+      "bytes": 8140,
+      "sha256": "3f2406ed3d17fd2c1ca9ecb004176e3f747d6713ea3c44f5149e8821ef03d738"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/review_statistics.py",
+      "bytes": 13574,
+      "sha256": "5d85a9be548896d479a813b08f6c09a28e2c2634bdf2b4472e661dd3b48bba77"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/saturation_qc.py",
+      "bytes": 3336,
+      "sha256": "b4e886f2e575d07f02937a405f41d0c34082df447e2b0320bcd153cf97cdd995"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/seed_boundaries.py",
+      "bytes": 8571,
+      "sha256": "046fde6eefb58c4db5625183a4d5721d723ede1d953f4f4dbfc7e37590c64d0f"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/server.py",
+      "bytes": 33785,
+      "sha256": "26650800ec02be5fe695258bc5b85213f9a4e9b7200f6a2e1cd0df8b6c7938b3"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/track_saved.py",
+      "bytes": 9381,
+      "sha256": "38cfabffa49d8db06fa887cda33e6aad57e9bb1be8117bd3cbf020dd1f3ec1b7"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/tracking_jobs.py",
+      "bytes": 8971,
+      "sha256": "efd1d7a2c8aebed7d3214b2a4cd26fd9f15ba8cf0e47ff35bcf3ab21109230d8"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/web/index.html",
+      "bytes": 17511,
+      "sha256": "413f8a4f6932aae2998c118924dbbf1161be9c49e5e8312fa0a997a3ab634f57"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/web/review.html",
+      "bytes": 7121,
+      "sha256": "d2104357a373afd9b91a24322d90eeb4fac845802a5e4a0e341a6b0c445d8883"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/web/roi.html",
+      "bytes": 9320,
+      "sha256": "a74fca7ef28e0db99e1c4cda84b3caefaa46e6816ea1827c78fd16ae83fe2ef2"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/web/studio.js",
+      "bytes": 1626,
+      "sha256": "ef1fc512f8cb1f6a52e6de8c1fc4f399bfbb5484ce9131c7b9b1f6f289928bcc"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/web/tracking_ui.js",
+      "bytes": 4600,
+      "sha256": "063fd4bb8c71f3d4fdc2422ec06999891d0005da95ad7a5241d633969420ee08"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_workflow.py",
+      "bytes": 14203,
+      "sha256": "536a68440a44bdb64724479bf51b7cc3c1b4c62ea778024dfdab6cf25b642195"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/time_ed.py",
+      "bytes": 17210,
+      "sha256": "63fba5d0836621567db274b93e61e02de251d51fb3bbb8a84b8e31818464a4aa"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/ui_feedback.py",
+      "bytes": 8040,
+      "sha256": "6dc546bd8637d912c256cff25f9c9ea56f37cfb5c8af15eab9147e8d4d326944"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 4143,
+      "sha256": "e0f25e999c5beb90c34eea7b8aa90d3ed35edf8ab180b97ee460648e7aa04c9d"
+    },
+    {
+      "path": "vendor/micasense/__init__.py",
+      "bytes": 1177,
+      "sha256": "ef3ca761aaac4ae091e14c70bd3943a10632a4e0a070ba968354ee9039010554"
+    },
+    {
+      "path": "vendor/micasense/capture.py",
+      "bytes": 45079,
+      "sha256": "9058af2213185a48b4e2eed48f9bc86ba3bb2d6c86fe08d938a192d80875c9b5"
+    },
+    {
+      "path": "vendor/micasense/dls.py",
+      "bytes": 6240,
+      "sha256": "5ed89ee318b4d6da149900327a44eb73c3040140e2b69a0e9236d4eaa3d59a9f"
+    },
+    {
+      "path": "vendor/micasense/image.py",
+      "bytes": 25310,
+      "sha256": "c02e03d7d08190ddc162187b5e9ea86d7f9613e50ce70de1661d7f702a4fed9b"
+    },
+    {
+      "path": "vendor/micasense/imageset.py",
+      "bytes": 6313,
+      "sha256": "46236fadcd54f5259be7ca629b664c44a491b1f346218463b71b4e2ce0b30a6c"
+    },
+    {
+      "path": "vendor/micasense/imageutils.py",
+      "bytes": 29973,
+      "sha256": "3e95232c53f9d9bedf62e503a2048aed256a427cd3f65982b2b94209f57ce051"
+    },
+    {
+      "path": "vendor/micasense/metadata.py",
+      "bytes": 16802,
+      "sha256": "4cb88a084d55d4cf7affa4ffe84c81109b89fb410b0b15ea119be03ecae0a3a4"
+    },
+    {
+      "path": "vendor/micasense/panel.py",
+      "bytes": 13195,
+      "sha256": "fa6af2fa04864c6e0a96788f3f5c41f6619a9329a18183b47b8a8021fbe85f05"
+    },
+    {
+      "path": "vendor/micasense/plotutils.py",
+      "bytes": 5488,
+      "sha256": "44db28040dcf122b172bcfcbba6c48c07f403d1abf525a74884e97522201fdde"
+    },
+    {
+      "path": "vendor/micasense/utils.py",
+      "bytes": 7409,
+      "sha256": "88a0c701dfb222e332aad6d62379ba3a2c27d181f325e7446cea0be8215580e0"
+    },
+    {
+      "path": "vendor/MICASENSE_LICENSE.txt",
+      "bytes": 1093,
+      "sha256": "2404cfe4085dab3c3f12e8cd4c6b788e35d9586fa58a13eabd6e39e0094ee28f"
+    }
+  ]
+}
