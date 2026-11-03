@@ -2,6 +2,8 @@
 
 Windows x64 데스크톱 프로그램입니다. 현재 지원 센서는 **MicaSense RedEdge-MX Dual native 10밴드**입니다.
 
+[최신 Windows 배포 ZIP 다운로드](https://github.com/KWAK0426/uav-tarp-studio/releases/latest/download/UAV-Tarp-Studio-Windows.zip) · [배포 내역](https://github.com/KWAK0426/uav-tarp-studio/releases)
+
 ## 시작
 
 1. 배포 ZIP 전체를 쓰기 가능한 로컬 폴더에 풉니다.
@@ -34,6 +36,8 @@ Windows x64 데스크톱 프로그램입니다. 현재 지원 센서는 **MicaSe
 - `settings`: 이 PC의 환경 선택·프로젝트 연결 기록. 배포/업데이트 파일에 포함하지 않습니다.
 
 처리·편집 중에는 업데이트 적용을 막습니다. 새 버전 검사가 실패하면 현재 버전을 유지합니다. 문제 발생 시 `이전_버전_복원.bat`으로 직전 버전으로 돌아갈 수 있습니다. 원영상과 프로젝트·결과 폴더는 업데이트 대상이 아닙니다.
+
+2026.11.03.1에서 일부 기존 Conda 환경의 HTTPS 인증서 오류가 나면 최신 전체 ZIP을 새 폴더에 풀어 실행하세요. 2026.11.03.2부터 이 호환성 문제를 수정했습니다. 인증서 확인과 SHA256 검증은 유지합니다.
 
 ## 데이터 비공개
 

@@ -1,0 +1,377 @@
+{
+  "release": "2026-10-26",
+  "micasense_upstream": {
+    "url": "https://github.com/micasense/imageprocessing.git",
+    "vcs_info": {
+      "commit_id": "3a903861b2f38c1717a5b6d918a2d9196db507ae",
+      "vcs": "git"
+    }
+  },
+  "note": "Hashes refer to the original snapshot, before distribution-only path/default patches.",
+  "files": [
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/launch.py",
+      "source_sha256": "d2a4df7b354621392397c58abc5f764d80d1b40c5406411f853987af0c7df66c"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/studio.py",
+      "source_sha256": "0b2ad510c72ac9b6aad245611486e23c3a88b9b308ffdabfe9c6ce4b9539492a"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/workflow.py",
+      "source_sha256": "9e6dd74c5768bec29c43a6670f5ec8b8eae73952ef27af41042458e2e5b1486d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/open_workspace.py",
+      "source_sha256": "f269c1c35e69605e05c0533daa8f539de7030d717882ca2cad58b98c4456a73b"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/parcel_editor.py",
+      "source_sha256": "618852c62f798c056624106252edc48fd1cc3868cd756eb733db76b1fc114baf"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/field_export.py",
+      "source_sha256": "b97d0df3f623ef83dfc9a9d7b7331e8c1c0c343f96083850a736556df7a234c0"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/panel_brdf.py",
+      "source_sha256": "146524661bd1f3de53dfe00235876dda0dbc8fb836ca4d68a638c302225551c8"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/brdf_streaming.py",
+      "source_sha256": "f7f007d8059edc00e341d3a8b8bbc4917c67506337cfdfce5eddfefedb439806"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/brdf_three_set_gui.py",
+      "source_sha256": "c5e2d507354c9da0fce971e0d480b790a11550a4de573d73d2886e569197cade"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/brdf_three_set_runner.py",
+      "source_sha256": "4ef878fe0e32ffc6389341faefe371e20b8af1493670721ebe2f8e156a182af0"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/brdf_three_sets.py",
+      "source_sha256": "a692a23d2ef62133c0de25bb2edcd9aef403fe17885cb28689b7367615123822"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/plot_principal_sections.py",
+      "source_sha256": "c6c50cd2cb9d1a25841647d8a99a87c56802b7102520b76ce30dd268dad01c00"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/code/build_rtlsr_kernel_lut.py",
+      "source_sha256": "3285f9b37ab8b60de5da079e74e1a1d6ce110815329165090e9d6fd06760a050"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/legacy_studio.py",
+      "source_sha256": "7fa4d502da368f25aa8061760c2b9600429bfebeb5bb4ff857c7ef9432560c1d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/assistant.py",
+      "source_sha256": "209cab6f3f39e1fa3a326990f960b78a7dfb8e722c2cd5dc7a14d3aa36399090"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/assistant_session.py",
+      "source_sha256": "66b2612e0fcdf82ba76aaa87ad6c44b0ec2ee0812835418f945217f9f21c4f44"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/assistant_ui.py",
+      "source_sha256": "cc6449c6a27dbe5a2257c02827482a427427dc113752828ddfd0f8ed4d810607"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/brdf.py",
+      "source_sha256": "cf675d1072f9101f0f8b2c01ef21da2560753c4a5327530b105f9854b0e61d6f"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/codex_assistant.py",
+      "source_sha256": "815d1f5f65d64b99af98af4759cd7c6f7a4c50c636ccfda80a5a89660603249d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/config.py",
+      "source_sha256": "25d20847bb4c1d16aacd99043225af92758ba0da940f43bd43b618a4ee6fb74d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/dataset.py",
+      "source_sha256": "2dddcfd0e371833b49c5436d82d4390e4fd46fcad6dbe8d8bab22d0616281dbb"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/dataset_ui.py",
+      "source_sha256": "60cd718a2f141d70d4c59f20eabdcd0cd6311c09ebbc7b8d6918569cf18cc521"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/easy_elc.py",
+      "source_sha256": "4e63386cc883210f398d2577df67192c5225c11ae0b6d5e5ca7f764f549703dc"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/elc_fit.py",
+      "source_sha256": "47035a3118912cb99aa50ace72810190794e191b5e35418c55aa6300888ed2de"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/elc_prepost.py",
+      "source_sha256": "c59e781938ae2aa260287a845a812cc858863339b8b0b53d5376db76fc1db419"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/elc_priority.py",
+      "source_sha256": "0eb29c4a82ce7cec8780153f22acd84a089f88e52e560e7f2771e84b74e6e343"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/fields.py",
+      "source_sha256": "84454ad369b585b5206cfa3c3cb4367b0f16bd7c8aab3d8c3c4b1ccecb642826"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/geometry.py",
+      "source_sha256": "e85a4227e2b303cf2fb4a2253f13c99346957702cfa9a0daa6c2c0c5b3249318"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/integrated.py",
+      "source_sha256": "ac77f474e9c42e98b3e966b85ede7359d56fb8ef42953d844bf4e0cbf6a3ae19"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/io.py",
+      "source_sha256": "9edb44e1892613e3660de1114a3e88a5036935414667db682907b2ea82380a7e"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/masks.py",
+      "source_sha256": "d87b4fa62f85fdd93610749f7ee8433dc52d0f4c04178ab79e4abe364388b17b"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/mosaic.py",
+      "source_sha256": "e9ecb47a21836cffb870c0ef73b727aaab934599cfe4c8e9e9cd35c2c634df8b"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/plots.py",
+      "source_sha256": "62b8915c0d3582af613f189ba4aee0f5471feeacc3cab5d3c5ed7cd62b1aa7f8"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/preflight.py",
+      "source_sha256": "620010199da6a93afe5472373a4484474c1eb86b6df0c0fb63a88466a061fa1d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/preparation.py",
+      "source_sha256": "39c483eab7cd107d940e9e92123e8e89dce34d9aab5369c621757b3cdeb30e5d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/preparation_runner.py",
+      "source_sha256": "c25e622f6ff29a8a286c04ba8e1e1e4934ef130edb830554a637cac2a36486ad"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/preprocess.py",
+      "source_sha256": "f552df5f16fe2f4eab05f8107fa7c77b9b5256d25b2fd18ed672c3e70346d52d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/ramses_ed.py",
+      "source_sha256": "4133e12de330bae5153139c644885195c18047fe1b88d86676963090c85ad707"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/raster.py",
+      "source_sha256": "dd8c5383050c698dae197f3f45c2760ba380675309040b9574d07fbf36551288"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/roi_studio_bridge.py",
+      "source_sha256": "ff1ebb62185d239d2df82cf992b06848e82a7faa844d442e557e186e36dee728"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/runner.py",
+      "source_sha256": "545c4a9717502b0d223c93379fa56887a59feca4893ddb46988e2d900cbc0f9a"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/solar.py",
+      "source_sha256": "b970e872974967c113d317eb035105ad14e84517faf9de99e5bf08e230fd889d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_handoff.py",
+      "source_sha256": "71f08b878529136f96de0e9e1fb5f3373787c628fde78e317e75b09a13fe1051"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_popup.py",
+      "source_sha256": "e7165f397c88914223deb7615f8867c76bf65b37c0f83334e8d2fc022b9f8739"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_workflow.py",
+      "source_sha256": "536a68440a44bdb64724479bf51b7cc3c1b4c62ea778024dfdab6cf25b642195"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/time_ed.py",
+      "source_sha256": "baaba252608daa1d0a9a6afa46414b30444ed9358f59654a7567806ab322c6c5"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/viewer.py",
+      "source_sha256": "7781012931e1953e7ae9f1d251f3ccf38e9aa9480e65b67b18ba228ebf3f0f0f"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/__init__.py",
+      "source_sha256": "76cf6ee4ed99e32d374d5c34f9325ffec5a14ca998268da36aa7f34f1753268d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/aligned_rgb.py",
+      "source_sha256": "44601bd6c1762a6f4a09b8c81690b3ea692e3026bd8b7eccc173dda1c1ac259c"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/context.py",
+      "source_sha256": "aec82bf0c6c051ade518f60198a94f0e74c2eb8035c3ecd41e4c51d08cda4fac"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/pair_candidates.py",
+      "source_sha256": "4cdb3f4329488660d4768cf2ec274836dedc013d41830044011318b29551b0fc"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/pixel_exclusions.py",
+      "source_sha256": "fada3ddd3be3927a6ea82c0aab2d5a114a6d70e550243b6818929a55fef9fd5d"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/review.py",
+      "source_sha256": "3f2406ed3d17fd2c1ca9ecb004176e3f747d6713ea3c44f5149e8821ef03d738"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/review_statistics.py",
+      "source_sha256": "5d85a9be548896d479a813b08f6c09a28e2c2634bdf2b4472e661dd3b48bba77"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/saturation_qc.py",
+      "source_sha256": "b4e886f2e575d07f02937a405f41d0c34082df447e2b0320bcd153cf97cdd995"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/seed_boundaries.py",
+      "source_sha256": "046fde6eefb58c4db5625183a4d5721d723ede1d953f4f4dbfc7e37590c64d0f"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/server.py",
+      "source_sha256": "26650800ec02be5fe695258bc5b85213f9a4e9b7200f6a2e1cd0df8b6c7938b3"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/tracking_jobs.py",
+      "source_sha256": "efd1d7a2c8aebed7d3214b2a4cd26fd9f15ba8cf0e47ff35bcf3ab21109230d8"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/track_saved.py",
+      "source_sha256": "38cfabffa49d8db06fa887cda33e6aad57e9bb1be8117bd3cbf020dd1f3ec1b7"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/docs/EASY_ELC.md",
+      "source_sha256": "70d0e5929dbc21019ff68bb34544f12624713d5b2ad3b91a79038b177962d7df"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/docs/INTEGRATED_RADIOMETRY_ED.md",
+      "source_sha256": "afbb541fb64215644df9ea96b1f5b3543653fde9242a7a5f7b24f91905adaf98"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/docs/SCIENTIFIC_CONTRACT.md",
+      "source_sha256": "8d9cd48ce2d33b4735b18c344704a71df19baadd2482e6dee40c10f56ad54c00"
+    },
+    {
+      "path": "tarp_center_roi_tool/app.py",
+      "source_sha256": "7d8a040bf464bc15721a8440703abf052c5b2ad74e6ac5521fda764eabda1b37"
+    },
+    {
+      "path": "tarp_center_roi_tool/core.py",
+      "source_sha256": "0254fd63c1611e2ad91ad7587a4a23c7514fe3b6153bba071e0250d415fa812f"
+    },
+    {
+      "path": "tarp_center_roi_tool/project_ui.py",
+      "source_sha256": "0a3ad5a0983664c96a7fc9cf7016f988390b11c931a1e152b2c36cac39c59b58"
+    },
+    {
+      "path": "tarp_center_roi_tool/studio_ui.py",
+      "source_sha256": "16c82e939d7e2f4d8259af7b9c06acff5ebda5dda570ae400020e29026e17848"
+    },
+    {
+      "path": "tarp_center_roi_tool/demo.py",
+      "source_sha256": "7e08ce9bf899eafa92a540a0d8a74ec77319cee0f7c6684d33de442ce77914ae"
+    },
+    {
+      "path": "tarp_center_roi_tool/test_core.py",
+      "source_sha256": "7598969fafca9f376c444c193510e9fae351ab668179b43088786fba50c762c8"
+    },
+    {
+      "path": "tarp_center_roi_tool/test_project.py",
+      "source_sha256": "e15a0bd8ef3780de57be34dbfbdb07d413656f599edd1fb197b57ea5206bb288"
+    },
+    {
+      "path": "tarp_center_roi_tool/test_automation.py",
+      "source_sha256": "7e71699a5dff3888502522bd1fc3360158ee910000eedbba00e63dfcbee9946a"
+    },
+    {
+      "path": "outputs/nongwon_preprocess_gui/nongwon_preprocess_gui.py",
+      "source_sha256": "7d33f34b350a36492605b5f0f3058a813dc52e02844f62c99753ac352558469d"
+    },
+    {
+      "path": "outputs/nongwon_preprocess_gui/metashape_metadata.py",
+      "source_sha256": "40e4bbc49c2772bcb07fcb1e4a73a3a54f1f3febfe8c7b17df8100d2c54b3f3f"
+    },
+    {
+      "path": "outputs/nongwon_preprocess_gui/generic_elc_tools/generic_elc_gui.py",
+      "source_sha256": "b059d812160e28193c87b0c7b803c05b4238d47cf6008437d07d54d417e7a64e"
+    },
+    {
+      "path": "ed_sensor_correction_tools/apply_ed_sensor_correction.py",
+      "source_sha256": "76383b878d5035515f795cce4ef701e5599046d0af88e306c6bb818a9b200fc5"
+    },
+    {
+      "path": "ed_sensor_correction_tools/apply_elc_reflectance_with_config.py",
+      "source_sha256": "edaeb32831161d875a8e34e14a47b529e43298c13dfeb4340196e7ded0ddf99f"
+    },
+    {
+      "path": "vendor/micasense/capture.py",
+      "source_sha256": "9058af2213185a48b4e2eed48f9bc86ba3bb2d6c86fe08d938a192d80875c9b5"
+    },
+    {
+      "path": "vendor/micasense/dls.py",
+      "source_sha256": "5ed89ee318b4d6da149900327a44eb73c3040140e2b69a0e9236d4eaa3d59a9f"
+    },
+    {
+      "path": "vendor/micasense/image.py",
+      "source_sha256": "c02e03d7d08190ddc162187b5e9ea86d7f9613e50ce70de1661d7f702a4fed9b"
+    },
+    {
+      "path": "vendor/micasense/imageset.py",
+      "source_sha256": "46236fadcd54f5259be7ca629b664c44a491b1f346218463b71b4e2ce0b30a6c"
+    },
+    {
+      "path": "vendor/micasense/imageutils.py",
+      "source_sha256": "3e95232c53f9d9bedf62e503a2048aed256a427cd3f65982b2b94209f57ce051"
+    },
+    {
+      "path": "vendor/micasense/metadata.py",
+      "source_sha256": "4cb88a084d55d4cf7affa4ffe84c81109b89fb410b0b15ea119be03ecae0a3a4"
+    },
+    {
+      "path": "vendor/micasense/panel.py",
+      "source_sha256": "fa6af2fa04864c6e0a96788f3f5c41f6619a9329a18183b47b8a8021fbe85f05"
+    },
+    {
+      "path": "vendor/micasense/plotutils.py",
+      "source_sha256": "44db28040dcf122b172bcfcbba6c48c07f403d1abf525a74884e97522201fdde"
+    },
+    {
+      "path": "vendor/micasense/utils.py",
+      "source_sha256": "88a0c701dfb222e332aad6d62379ba3a2c27d181f325e7446cea0be8215580e0"
+    },
+    {
+      "path": "vendor/micasense/__init__.py",
+      "source_sha256": "ef3ca761aaac4ae091e14c70bd3943a10632a4e0a070ba968354ee9039010554"
+    },
+    {
+      "path": "vendor/MICASENSE_LICENSE.txt",
+      "source_sha256": "2404cfe4085dab3c3f12e8cd4c6b788e35d9586fa58a13eabd6e39e0094ee28f"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/web/index.html",
+      "source_sha256": "413f8a4f6932aae2998c118924dbbf1161be9c49e5e8312fa0a997a3ab634f57"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/web/roi.html",
+      "source_sha256": "a74fca7ef28e0db99e1c4cda84b3caefaa46e6816ea1827c78fd16ae83fe2ef2"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/web/studio.js",
+      "source_sha256": "ef1fc512f8cb1f6a52e6de8c1fc4f399bfbb5484ce9131c7b9b1f6f289928bcc"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/web/tracking_ui.js",
+      "source_sha256": "063fd4bb8c71f3d4fdc2422ec06999891d0005da95ad7a5241d633969420ee08"
+    },
+    {
+      "path": "UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/web/review.html",
+      "source_sha256": "d2104357a373afd9b91a24322d90eeb4fac845802a5e4a0e341a6b0c445d8883"
+    }
+  ]
+}
