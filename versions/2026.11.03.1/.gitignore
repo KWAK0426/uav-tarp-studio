@@ -1,8 +1,0 @@
-.local/
-Work/
-__pycache__/
-*.pyc
-UAV_Preprocessing_Studio_20260924/projects/
-UAV_Preprocessing_Studio_20260924/verification/
-tarp_center_roi_tool/checks/
-.runtime/
