@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ELC Studio GENERAL 시작 안내</title>
+  <style>
+    body { font: 16px/1.7 "Malgun Gothic", sans-serif; max-width: 900px; margin: 32px auto; padding: 0 20px; color: #20252b; }
+    h1 { font-size: 28px; } h2 { font-size: 21px; }
+    a { color: #11699a; } code { overflow-wrap: anywhere; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border-bottom: 1px solid #d5dadd; padding: 8px; text-align: left; vertical-align: top; }
+    li { margin: 6px 0; }
+  </style>
+</head>
+<body>
+  <h1>ELC Studio GENERAL</h1>
+  <p>MX Dual native 10밴드의 ELC 반사도 영상 산출 전용 안내입니다. GPS 없이 처리할 수 있으며, 실제 GPS는 태양각 기록용 선택 입력뿐입니다. 앱 내부 AI 로그인은 필요 없습니다.</p>
+  <h2>처음 시작</h2>
+  <ol>
+    <li><code>00_INSTALL.bat</code>으로 ExifTool 13.07 이상 전용 환경을 설치하고 <code>02_CHECK.bat</code>으로 확인합니다. 기존 환경은 자동 갱신되지 않으며 base 환경은 변경하지 않습니다.</li>
+    <li>합성 검사 후 <code>01_START.bat</code>으로 빈 프로젝트를 엽니다. 추가 생성은 <code>03_NEW_PROJECT.bat</code>입니다.</li>
+    <li>실제 ISO 날짜·세션·현장을 입력합니다. 외부 원자료는 직접 선택하며 이동하지 않습니다.</li>
+    <li>입력·대상 등록 → native 후보 → ROI·화소 검토와 승인 → 방사·gain 1회·실측 Ed → 계수 검토·적용 승인 순서입니다.</li>
+  </ol>
+  <p>대상은 <code>shot</code> CSV로 등록합니다. 최근접 실측 Ed의 허용 시간차는 5초 이하이며 보간·외삽하지 않습니다. GPS가 없으면 태양각은 빈 값/미제공입니다. 전체 대상 처리는 별도 사용자 선택입니다.</p>
+  <table>
+    <thead><tr><th>문서</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td><a href="../../README.md">README</a></td><td>배포 범위·실행 순서</td></tr>
+      <tr><td><a href="../../docs/FIRST_START.md">최초 설정</a></td><td>프로젝트와 첫 화면</td></tr>
+      <tr><td><a href="../../docs/REQUIRED_INPUTS.md">필수 입력</a></td><td>Raw·shot CSV·실측값</td></tr>
+      <tr><td><a href="../../docs/USER_GUIDE.md">사용 안내</a></td><td>ELC 5단계·반사도·검증 HTML</td></tr>
+      <tr><td><a href="../../docs/CODEX_HANDOFF.md">Codex 인수인계</a></td><td>받는 PC의 로컬 소스 협업</td></tr>
+      <tr><td><a href="../../docs/KNOWN_LIMITS.md">범위·제한</a></td><td>ELC 전용 범위·한글/긴 경로 제한</td></tr>
+      <tr><td><a href="../../VALIDATION.md">검증 기록</a></td><td>실제 실행·미확인 항목의 기준</td></tr>
+      <tr><td><a href="../../THIRD_PARTY_NOTICES.md">외부 소프트웨어</a></td><td>MIT 등 라이선스·vendor 출처</td></tr>
+    </tbody>
+  </table>
+  <p>계수 준비는 <code>awaiting_review</code>에서 멈추며 사용자 적용 승인 후 native 밴드별 Float32 ELC TIFF·10밴드 계수 CSV·ROI/타프 독립 검증 HTML을 만듭니다. 공간 분석이나 Photos·모자이크·DEM 입력은 제공하지 않습니다.</p>
+<p>한글 경로 메타데이터 복사는 UTF-8 인자 파일과 제한시간을 사용합니다. 구버전 ExifTool의 240자 이상 경로는 래스터 쓰기 전에 차단하며 새 환경 또는 짧은 루트가 필요합니다. 새 런타임 전체 통과를 선언하지 않습니다. 상세 상태는 검증 기록을 확인합니다.</p>
+</body>
+</html>

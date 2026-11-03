@@ -1,0 +1,12 @@
+{
+  "miniforge": {
+    "version": "26.9.4-1",
+    "url": "https://github.com/conda-forge/miniforge/releases/download/26.9.4-1/Miniforge3-Windows-x86_64.exe",
+    "sha256": "8cb96eed35effdd5b2d0860c5e85eed2224e72e71dd45a3fd6b1afe3d70585bb"
+  },
+  "codex": {
+    "version": "0.166.0",
+    "url": "https://github.com/openai/codex/releases/download/rust-v0.166.0/codex-x86_64-pc-windows-msvc.exe.zip",
+    "sha256": "bf67d9662ed539f305849b74ad6420cc7b23aa2be07753710ca3db9134a0246d"
+  }
+}
