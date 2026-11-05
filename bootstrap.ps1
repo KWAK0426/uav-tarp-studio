@@ -1,4 +1,4 @@
-param([switch]$CheckOnly, [switch]$NoDownload, [switch]$Headless, [switch]$Smoke)
+﻿param([switch]$CheckOnly, [switch]$NoDownload, [switch]$Headless, [switch]$Smoke)
 $ErrorActionPreference = 'Stop'
 $taskRoot = $PSScriptRoot
 $env:PYTHONUTF8 = '1'
@@ -146,6 +146,7 @@ try {
         Add-Type -AssemblyName System.Drawing
         $script:taskWindow=New-Object Windows.Forms.Form
         $script:taskWindow.Text='UAV Studio | Environment check'
+        $script:taskWindow.Icon=New-Object Drawing.Icon((Join-Path $taskRoot 'assets\studio.ico'))
         $script:taskWindow.Size=New-Object Drawing.Size(780,420)
         $script:taskWindow.StartPosition='CenterScreen'; $script:taskWindow.ControlBox=$false
         $script:taskText=New-Object Windows.Forms.TextBox

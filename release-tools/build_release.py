@@ -9,10 +9,27 @@ import shutil
 import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
-ROOT_FILES=['UAV_Studio.exe','bootstrap.ps1','downloads.json','README.md','MAINTENANCE.md',
+ROOT_FILES=['assets/studio.ico','tools/create_shortcuts.ps1','UAV_Studio.exe','bootstrap.ps1','downloads.json','README.md','MAINTENANCE.md',
             'VALIDATION.md','rollback.ps1','이전_버전_복원.bat',
             'tools/runtime_probe.py','tools/UAV_Studio.cs','tools/ExifToolShim.cs']
-APP_EXTRA=['desktop.py','studio_update.py','channel.json','test_desktop.py','UPSTREAM_MANIFEST.json']
+APPROVED_CALIBRATION = {'UAV_Preprocessing_Studio_20260924/engine/defaults/mx_dual_sensor_intercalibration_gain.csv': '302c81465eea20a52898418e767518630f0ebd320673b281acaa4cd54ebd51fa', 'UAV_Preprocessing_Studio_20260924/engine/defaults/tarp_reflectance_library.csv': '752bf977af4fa2d756627afba130dbca3308840d479617b7d1fcd39853a23dc4'}
+APPROVED_CALIBRATION['UAV_Preprocessing_Studio_20260924/engine/defaults/tarp_1m_261026_legacy.csv'] = 'cf2910f16b0e62abf8876b2f8c0ea253dd4612265168c57abf2a2149ead41022'
+APP_EXTRA=['UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_native_qc_ui.py','location_mosaic.py','test_location_mosaic.py','ed_import.py','test_ed_import.py','app_identity.py','assets/studio.ico','assets/studio.png','desktop.py','studio_update.py','channel.json','test_desktop.py','UPSTREAM_MANIFEST.json', 'test_calibration_presets.py',
+            'UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/calibration_presets.py', 'UAV_Preprocessing_Studio_20260924/engine/defaults/tarp_1m_261026_legacy.csv']
+
+APP_EXTRA += ['UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_popup.py', 'UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_regions_ui.py', 'UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_workflow.py', 'UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/context.py', 'UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/server.py', 'UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/date_locations.py', 'UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/location_review.py', 'UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/saturation_qc.py', 'UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_tool/code/quick_tarp_qc.py', 'UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/general_tarp_review.py', 'test_general_tarp_review.py']
+
+
+APP_EXTRA += ['native_qc_review.py', 'UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_native_proposal.py']
+APP_EXTRA += ['UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_batch_qc.py', 'UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/tarp_batch_qc_ui.py', 'test_batch_qc.py']
+APP_EXTRA += ['UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/roi_batch_import.py']
+APP_EXTRA += ['UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/roi_auto_prepare.py']
+APP_EXTRA += ['UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/progress_ui.py']
+APP_EXTRA += ['test_progress_ui.py']
+APP_EXTRA += ['completed_result.py', 'test_completed_result.py']
+APP_EXTRA += ['UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/band_scope.py','test_auto_band_elc.py']
+APP_EXTRA += ['UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/button_guide.py']
+APP_EXTRA += ['UAV_Preprocessing_Studio_20260924/engine/uav_pipeline/completed_result.py']
 
 
 def app_files(app):
@@ -28,10 +45,13 @@ def app_files(app):
         if path.suffix=='.csv':
             defaults = {'UAV_Preprocessing_Studio_20260924/engine/defaults/mx_dual_sensor_intercalibration_gain.csv',
                         'UAV_Preprocessing_Studio_20260924/engine/defaults/tarp_reflectance_library.csv'}
-            if not name.startswith('templates/') and name not in defaults: raise ValueError('CSV outside templates')
+            if not name.startswith('templates/') and name not in APPROVED_CALIBRATION: raise ValueError('CSV outside templates')
             with path.open(encoding='utf-8-sig',newline='') as stream:
                 rows=list(csv.DictReader(stream))
-            if name.endswith('sensor_gain.csv'):
+            if name in APPROVED_CALIBRATION and rows:
+                if hashlib.sha256(raw).hexdigest() != APPROVED_CALIBRATION[name]:
+                    raise ValueError('Unapproved built-in calibration contents: '+name)
+            elif name.endswith('sensor_gain.csv'):
                 if any(row.get('gain','').strip() for row in rows): raise ValueError('Measured gains must not ship')
             elif rows: raise ValueError('Measured rows must not ship')
     return names
@@ -41,7 +61,8 @@ def write_manifest(app,names,version):
     records=[{'path':name,'bytes':(app/name).stat().st_size,
               'sha256':hashlib.sha256((app/name).read_bytes()).hexdigest()} for name in names]
     (app/'PACKAGE_MANIFEST.json').write_text(json.dumps({'release':version,'edition':'Native tarp reflectance desktop',
-        'excluded':['imagery','measurements','ROI','coefficients','results','credentials','local settings','logs'],
+        'included_calibration':'User-approved MX Dual gains and PNU small/large and NIAS tarp measurements; legacy IDs preserved',
+        'excluded':['imagery','flight Ed measurements','ROI','coefficients','results','credentials','local settings','logs'],
         'files':records},ensure_ascii=False,indent=2),encoding='utf-8')
 
 

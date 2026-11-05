@@ -26,3 +26,9 @@ versions/**/runs/
 *.zip
 *.csv
 !versions/*/templates/*.csv
+
+!versions/*/UAV_Preprocessing_Studio_20260924/engine/defaults/*.csv
+
+!versions/*/UAV_Preprocessing_Studio_20260924/engine/defaults/*.csv
+
+!versions/*/UAV_Preprocessing_Studio_20260924/engine/defaults/*.csv

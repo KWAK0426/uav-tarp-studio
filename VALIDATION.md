@@ -1,27 +1,12 @@
-# 배포 전 검증 범위
+# Validation — 2026.11.05.15
 
-2026-11-03, Windows x64 개발 PC에서 검사했습니다.
+- Core synthetic regression: 72 tests passed.
+- Desktop/package checks: 11 tests passed.
+- Progress and popup placement: 7 tests passed, including nested dialog centering and preserving manual movement. Set expansion and duplicate-white validation-type rejection are included in the 72 core tests.
+- Ed import: 7 tests passed, including real GUI worker conversion, current-date auto-connection, persisted CSV path, wrong-date rejection and modified-CSV rejection.
+- Synthetic end-to-end: real DN/radiometry/gain/Ed/ELC processing, 20 TIFFs, pilot approval before full processing, unchanged source hashes. No science processing stages mocked.
+- Archived partial-result continuation: GUI report → explicit approval → full output tested with 3 synthetic shots, 8 bands and 24 TIFFs; original coefficients reused and archived outputs/ROI preserved.
+- Launcher/bootstrap smoke passed. Installed stage 01 rendered and inspected with the red folder-import button and editable Ed timezone.
+- Package manifest and SHA256 checked; research imagery, observation-specific Ed, ROI, outputs and credentials excluded. Explicitly requested built-in sensor/tarp calibration tables included.
 
-| 항목 | 결과 |
-| --- | --- |
-| 기존 Python 환경 재사용 | Python 3.12.7, NumPy 1.26.4, GDAL 3.11.4에서 통과 |
-| 누락 도구만 설치 | 별도 앱 위치에 ExifTool 13.60과 Perl 설치, stay-open 호출 통과 |
-| 기존 처리 회귀 검사 | 59개 통과 |
-| 배포/업데이트 경계 검사 | 6개 통과: 경로 이탈, 해시/목록 검증, 프로젝트 보존, 버전 전환, EXIF 날짜, AI 동작 제한 |
-| 합성 데이터 전체 처리 | 실제 처리 프로세스에서 2촬영 × 10밴드, 계수 10개·반사도 TIFF 20개 생성. 알려진 반사도 오차 허용치 3e-6 이내, 원본 해시 보존 |
-| 데스크톱 실행 | 실제 EXE 첫 화면 확인, bootstrap smoke 통과 |
-| Codex 연결 프로토콜 | 별도 인증 영역에서 app-server 초기화·account/read 통과. 로그인/추론 요청은 수행하지 않음 |
-| 공개 업데이트 조회·다운로드 | 2026.11.03.2의 통신 수정 후 공개 GitHub API 조회와 실제 ZIP 다운로드·SHA256 검증 통과. TLS 인증서 검증 유지 |
-
-합성 데이터 검사는 소프트웨어 연결과 계산 회귀를 확인하는 검사입니다. 실제 촬영의 타프 재질·포화·그림자·ROI·실측 자료 적합성을 대신 보증하지 않습니다.
-
-다른 물리 PC에서 Python이 전혀 없는 상태의 전체 설치, 해당 사용자의 ChatGPT 인증·추론, 새 실측 자료로 산출한 반사도 정확도는 아직 검증하지 않았습니다. 최초 배포 파일은 코드 서명이 없는 실행 파일입니다.
-
-검증 로그와 실제 PC 경로는 로컬에만 보관하며 공개 패키지에 넣지 않습니다. 배포 ZIP은 명시된 앱 파일만 포함하고 파일별 SHA256 목록을 제공합니다.
-
-## 2026.11.03.3 변경 검증
-
-- 번호별 입력 폴더의 TIFF를 한 폴더에 저장하도록 변경하고, 대소문자를 포함한 파일명 중복을 처리 시작 전에 차단했습니다.
-- 합성 데이터 전체 처리: 2촬영 × 10밴드 반사도 TIFF 20개를 `Reflectance` 바로 아래에 생성했습니다. 알려진 반사도 오차 3e-6 이내와 원본 해시 보존을 확인했습니다.
-- 처리 회귀 검사 60개와 배포/업데이트 경계 검사 6개가 통과했습니다.
-- 기존 실행기 코드는 변경하지 않았습니다. 이번 변경으로 새 물리 PC 설치나 실측 정확도를 재검증한 것은 아닙니다.
+These checks do not establish accuracy for every field flight or compatibility with every PC. Users still review tarp proposals, identity of calibration data, validation errors and full-flight approval.
